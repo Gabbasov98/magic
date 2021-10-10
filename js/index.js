@@ -146,4 +146,8 @@ $(document).ready(function() {
     $(".services__filter-item").click(function() {
         $(this).toggleClass("services__filter-item--active")
     })
+
+    $(".lk__pay-item-show").click(function() {
+        $(this).toggleClass("lk__pay-item-show--active")
+    })
 })

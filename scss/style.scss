@@ -276,13 +276,14 @@ i {
     line-height: 100%;
 }
 
+@import 'ux';
 @import 'header';
 @import 'textpage';
 @import 'index';
 @import 'services';
+@import 'lk';
 @import 'footer';
 @import 'popups';
-@import 'ux';
 .wrapper {
     margin: 0 auto;
     display: flex;
