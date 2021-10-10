@@ -142,4 +142,8 @@ $(document).ready(function() {
         $(`.quiz__step[data-step-path="${path}"]`).addClass("quiz__step--active");
         console.log(path)
     })
+
+    $(".services__filter-item").click(function() {
+        $(this).toggleClass("services__filter-item--active")
+    })
 })

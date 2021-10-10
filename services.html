@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class='header'>
+                <div class='header-top'>
+                    <div class="container">
+                        <div class="header-top__inner">
+                            <div class="header-top__left">
+                                <a href="" class="header__logo">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                                <span class="header-top__hint">Астрологи, экстрасенсы и ясновидящие <br>                                    онлайн. Более 1000 экспертов.</span>
+                            </div>
+                            <div class="header-top__right">
+                                <div class="header__theme-toggler header__theme-toggler--dark">
+                                    <button class="header__theme-toggler-light">
+                                        <img src="images/sun.png" alt="">
+                                    </button>
+                                    <button class="header__theme-toggler-dark">
+                                        <img src="images/moon.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="header-top__links">
+                                    <img src="images/user.png" alt="" class="header-top__links-icon">
+                                    <a href="" class="header-top__links-item">Войти</a>
+                                    <span class="header-top__links-separate">или</span>
+                                    <a href="" class="header-top__links-item">Зарегистрироваться</a>
+                                </div>
+                                <button class="header__burger">
+                                    <span></span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mob-nav">
+                    <div class='header-center'>
+                        <div class="container">
+                            <div class="header-center__inner">
+                                <div class="header-center__left">
+                                    <a href="" class="header-center__link">
+                                        <img src="images/star.png" alt=""> Задайте вопрос
+                                    </a>
+                                    <a href="" class="header-center__link">
+                                        <img src="images/star.png" alt=""> Выберите эксперта
+                                    </a>
+                                    <a href="" class="header-center__link">
+                                        <img src="images/star.png" alt=""> Закажите услугу
+                                    </a>
+                                </div>
+                                <div class="header-center__right">
+                                    <div class="header__search">
+                                        <input type="text" class="header__search">
+                                    </div>
+                                    <button class="header__search-btn">
+                                        <img src="images/search.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='header-bottom'>
+                        <div class="container">
+                            <div class="header-bottom__inner">
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Любовь и отношения
+                                </a>
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Семья и дети
+                                </a>
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Судьба и будущее
+                                </a>
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Работа и карьера
+                                </a>
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Деньги и бизнес
+                                </a>
+                                <a href="" class="header-bottom__link">
+                                    <img src="images/star.png" alt=""> Все вопросы
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <section class='breadcrumbs'>
+                <div class='container'>
+                    <div class='breadcrumbs__inner'>
+                        <div class="breadcrumbs__items">
+                            <a href="" class="breadcrumbs__item">Главная</a>
+                            <span class="breadcrumbs__item"> Услуги</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class='experts services'>
+                <img src="images/sky4.png" alt="" class="services__bg">
+                <img src="images/owl.png" alt="" class="experts__bg">
+                <div class='container'>
+                    <p class="experts__subtitle subtitle">НАЗВАНИЕ СЕРВИСА</p>
+                    <h2 class="experts__title">Услуги</h2>
+                    <div class="experts__tabs">
+                        <div class="experts__tab experts__tab--active" data-tab-path="1">Популярное</div>
+                        <div class="experts__tab" data-tab-path="2">Со скидкой</div>
+                        <div class="experts__tab" data-tab-path="3">Бесплатно</div>
+                        <div class="experts__tab" data-tab-path="4">Расклад таро</div>
+                        <div class="experts__tab" data-tab-path="5">Отношения</div>
+                        <div class="experts__tab" data-tab-path="6">Будущее</div>
+                    </div>
+                    <div class="services__filter">
+                        <div class="services__filter-item">
+                            <span>По популярности</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g  clip-path="url(#clip0)">
+                                <path d="M3.62065 7.0885L10.5586 0.169747C10.7859 -0.0568047 11.1539 -0.0564238 11.3809 0.170919C11.6076 0.398233 11.607 0.766464 11.3797 0.993191L4.85472 7.50015L11.3799 14.0071C11.6072 14.2338 11.6078 14.6018 11.3811 14.8292C11.2673 14.9431 11.1183 15.0001 10.9693 15.0001C10.8206 15.0001 10.6722 14.9435 10.5586 14.8303L3.62065 7.91177C3.51117 7.80284 3.44974 7.6546 3.44974 7.50015C3.44974 7.3457 3.51135 7.19763 3.62065 7.0885Z" fill="#fff"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="15" height="15" fill="white" transform="matrix(-1 0 0 1 15 0)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="services__filter-item">
+                            <span>По цене</span>
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g  clip-path="url(#clip0)">
+                                <path d="M3.62065 7.0885L10.5586 0.169747C10.7859 -0.0568047 11.1539 -0.0564238 11.3809 0.170919C11.6076 0.398233 11.607 0.766464 11.3797 0.993191L4.85472 7.50015L11.3799 14.0071C11.6072 14.2338 11.6078 14.6018 11.3811 14.8292C11.2673 14.9431 11.1183 15.0001 10.9693 15.0001C10.8206 15.0001 10.6722 14.9435 10.5586 14.8303L3.62065 7.91177C3.51117 7.80284 3.44974 7.6546 3.44974 7.50015C3.44974 7.3457 3.51135 7.19763 3.62065 7.0885Z" fill="#fff"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="15" height="15" fill="white" transform="matrix(-1 0 0 1 15 0)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="experts__contents">
+                        <div class="experts__content experts__content--active" data-content-path="1">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experts__content" data-content-path="2">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experts__content" data-content-path="3">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experts__content" data-content-path="4">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experts__content" data-content-path="5">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experts__content" data-content-path="6">
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experts__item">
+                                <div class="card2">
+                                    <div class="card2__inner">
+                                        <div class="card2__price">
+                                            <strong>1200</strong>
+                                            <span>руб.</span>
+                                        </div>
+                                        <div class="card2__title">Дизайн человека</div>
+                                        <div class="card2__desc">Узнайте свой бодиграф,чтобы понять себя и изменить жизнь</div>
+                                        <a href="" class="card2__link btn btn-outline-white">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="services__all">Ещё услуги</button>
+                    <a href="" class="experts__btn btn btn-yellow btn-rounded">Помощь в подборе</a>
+                </div>
+            </section>
+
+
+
+
+        </div>
+        <footer class='footer'>
+            <div class='container'>
+                <div class='footer__inner'>
+                    <div class="footer__left">
+                        <div class="footer__info">
+                            <p>Сервис может содержать информацию только для совершеннолетних 18+ и использоваться исключительно в развлекательных целях. Сервис не несёт ответственности за обещания и утверждения, содержащиеся в описании услуг экспертов и
+                                не может гарантировать, что использование услуг приведет к целям и результатам, описанным на сайте, в том числе и в отзывах клиентов. Используя сервис, вы соглашаетесь с тем, что делаете это добровольно, принимая <a href="">Условия
+                                    использования сервиса</a> и <a href="">Правила сервиса</a> .</p>
+                            <p>Эксперты не являются сотрудниками Сервиса.</p>
+                            <p>© 2009–2021 Service.ru.</p>
+                            <p>Астрология, экстрасенсы и гадания Таро.</p>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__right-item">
+                            <a href="" class="footer__item">О нашем сервисе</a>
+                            <a href="" class="footer__item">Эксперты</a>
+                            <a href="" class="footer__item">Подбор экспертов</a>
+                            <a href="" class="footer__item">Вопрос-ответ</a>
+                            <a href="" class="footer__item">Отзывы</a>
+                        </div>
+                        <div class="footer__right-item">
+                            <a class="footer__item footer__item--nolink">Мы на связи:</a>
+                            <a href="" class="footer__item">Служба поддержки</a>
+                            <a href="mailto:service@sv.ru" class="footer__item">service@sv.ru</a>
+                            <div class="footer__socials">
+                                <a href="" class="footer__socials-item">
+                                    <img src="images/messenger.png" alt="">
+                                </a>
+                                <a href="" class="footer__socials-item">
+                                    <img src="images/telegram.png" alt="">
+                                </a>
+                                <a href="" class="footer__socials-item">
+                                    <img src="images/whatsapp.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

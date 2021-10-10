@@ -35,6 +35,9 @@
   background-repeat: no-repeat;
   background-position: right 168px center;
   background-size: 188px auto; }
+  .experts .container {
+    position: relative;
+    z-index: 2; }
   .experts__bg {
     position: absolute;
     top: 50%;

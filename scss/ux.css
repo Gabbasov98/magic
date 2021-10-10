@@ -118,9 +118,34 @@
         position: absolute;
         z-index: 1;
         background: #000; }
+    .card2:hover .card2__price {
+      color: #ba8658;
+      background-color: #fff; }
   .card2__inner {
     border: 1px solid #ba8658;
-    padding: 30px; }
+    padding: 30px;
+    position: relative; }
+  .card2__price {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: #ba8658;
+    border-radius: 50%;
+    top: -8px;
+    right: 0;
+    transform: translateX(50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 14px; }
+    .card2__price strong {
+      font-size: 21px;
+      font-weight: 500; }
+    .card2__price span {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 300; }
   .card2__title {
     font-size: 17px;
     line-height: 170%;
@@ -150,6 +175,52 @@
     height: 44px;
     margin: 30px auto 0;
     border-radius: 22px; }
+
+.breadcrumbs {
+  margin-top: 33px; }
+  .breadcrumbs__inner {
+    content: '';
+    display: flex;
+    align-items: center; }
+  .breadcrumbs__items {
+    padding: 8px 22px;
+    border-radius: 23.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: -22px; }
+    .breadcrumbs__items:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      background-color: #252525;
+      border-radius: 23.5px; }
+  .breadcrumbs__item {
+    font-size: 15px;
+    line-height: 200%;
+    font-weight: 500;
+    color: #727171;
+    position: relative;
+    z-index: 2; }
+    .breadcrumbs__item:not(:last-child) {
+      margin-right: 25px; }
+      .breadcrumbs__item:not(:last-child):before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        width: 6px;
+        height: 6px;
+        right: -17px;
+        top: 12px;
+        background-color: #ba8658;
+        border-radius: 50%; }
+    .breadcrumbs__item:last-child {
+      color: #ffffff; }
 
 .btn-yellow {
   background-color: #ba8658;
@@ -184,6 +255,11 @@
 .btn-rounded {
   border-radius: 30px; }
 
+@media screen and (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 0px; }
+    .breadcrumbs__items {
+      margin-left: 0; } }
 @media screen and (max-width: 768px) {
   .btn-yellow,
   .btn-outline-yellow {

@@ -1,0 +1,145 @@
+.services {
+    padding: 70px 0 180px;
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background-image: url(../images/sky3.png);
+        background-size: 100% 100%;
+        width: 471px;
+        height: 337px;
+        opacity: 0.23;
+        left: 0;
+        bottom: 336px;
+        transform: translateY(50%);
+    }
+    .experts__bg {
+        opacity: 0.09;
+    }
+    .experts__tabs {
+        justify-content: center;
+    }
+    .experts__tab {
+        padding: 0 30px;
+        margin: 0 10px 20px;
+    }
+    .experts__contents {
+        margin-top: 85px;
+        padding: 0 37px;
+    }
+    .experts__content {
+        gap: 70px;
+    }
+    .experts__btn {
+        margin-top: 30px;
+    }
+    .card2__inner {
+        padding: 40px;
+    }
+    &__filter {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        &-item {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 400;
+            color: #a7a6a7;
+            &:hover {
+                color: #ba8658;
+                cursor: pointer;
+                & path {
+                    fill: #ba8658;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+            & svg {
+                transform: rotate(90deg);
+                margin-left: 10px;
+            }
+        }
+        &-item--active {
+            & svg {
+                transform: rotate(270deg);
+            }
+        }
+    }
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        opacity: 0.2;
+        width: 100%;
+    }
+    &__all {
+        margin: 75px auto 0;
+        width: 230px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ba8658;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        .experts__content {
+            // gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        padding: 30px 0 60px;
+        .experts__contents {
+            margin-top: 40px;
+        }
+        .experts__content {
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__bg,
+        &:after {
+            display: none;
+        }
+        &__all {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        .experts__contents {
+            padding: 0 25px;
+        }
+        .experts__content {
+            gap: 40px;
+            grid-template-columns: 1fr;
+        }
+        .experts__tab {
+            padding: 0 25px;
+            height: 35px;
+            font-size: 12px;
+            margin: 0 5px 5px;
+        }
+        .card2 {
+            &__inner {
+                padding: 30px;
+            }
+            &__price {
+                width: 65px;
+                height: 65px;
+                padding: 17px 0 10px;
+            }
+        }
+    }
+}

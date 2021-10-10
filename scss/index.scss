@@ -44,6 +44,10 @@
     background-repeat: no-repeat;
     background-position: right 168px center;
     background-size: 188px auto;
+    .container {
+        position: relative;
+        z-index: 2;
+    }
     &__bg {
         position: absolute;
         top: 50%;
