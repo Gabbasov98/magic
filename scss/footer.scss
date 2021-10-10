@@ -1,0 +1,108 @@
+.footer {
+    background-color: #191919;
+    padding: 80px 0 150px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 600px;
+    }
+    &__right {
+        display: flex;
+        &-item {
+            &:not(:last-child) {
+                margin-right: 170px;
+            }
+        }
+    }
+    &__info {
+        & p {
+            opacity: 0.34;
+            font-size: 14px;
+            line-height: 25px;
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+            & a {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+    &__item {
+        display: block;
+        font-size: 15px;
+        line-height: 29px;
+        &:hover {
+            color: #c88f5d;
+        }
+    }
+    &__item--nolink {
+        pointer-events: none;
+    }
+    &__socials {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        &-item {
+            &:not(:last-child) {
+                margin-right: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 40px 0 100px;
+        &__left {
+            width: 500px;
+        }
+        &__right {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 20px 0;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__right {
+            order: -1;
+            margin-bottom: 30px;
+        }
+        &__info {
+            & p {
+                line-height: 140%;
+                font-size: 13px;
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__right {
+            margin-bottom: 15px;
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+}

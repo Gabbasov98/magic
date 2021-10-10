@@ -1,0 +1,256 @@
+.header__logo {
+  width: 191px;
+  display: block;
+  margin-right: 25px;
+  flex-shrink: 0; }
+  .header__logo img {
+    width: 100%; }
+.header__theme-toggler {
+  padding: 3px;
+  border-radius: 21px 21px 21px 21px;
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 80px;
+  background-color: #ba8658; }
+  .header__theme-toggler-dark {
+    border-radius: 18.5px;
+    width: 58px;
+    height: 37px; }
+  .header__theme-toggler-light {
+    border-radius: 18.5px;
+    width: 58px;
+    height: 37px; }
+.header__theme-toggler--dark .header__theme-toggler-dark {
+  background-color: #252525; }
+.header__theme-toggler--light .header__theme-toggler-light {
+  background-color: #252525; }
+.header__search {
+  position: relative; }
+  .header__search:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #ba8658;
+    left: 0;
+    top: 0; }
+  .header__search input {
+    background-color: #fff;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    height: 30px;
+    padding: 0 15px; }
+  .header__search-btn {
+    margin-left: 20px; }
+.header__search--active::after {
+  -webkit-animation: search 1s linear 1 forwards;
+  animation: search 1s linear 1 forwards; }
+.header__burger {
+  display: none; }
+
+.header-top__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0; }
+.header-top__left, .header-top__right {
+  display: flex;
+  align-items: center; }
+.header-top__hint {
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300; }
+.header-top__links {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500; }
+  .header-top__links-separate {
+    font-weight: 300;
+    color: #9a9999;
+    margin: 0 10px; }
+  .header-top__links-icon {
+    margin-right: 10px; }
+  .header-top__links-item:hover {
+    color: #9a9999; }
+
+.header-center {
+  background-color: #ba8658; }
+  .header-center__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 51px; }
+  .header-center__right {
+    display: flex;
+    align-items: center; }
+  .header-center__link {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative; }
+    .header-center__link > img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.18;
+      transform: translate(-50%, -25%); }
+    .header-center__link:hover {
+      color: #000; }
+    .header-center__link:not(:last-child) {
+      margin-right: 65px; }
+
+.header-bottom {
+  border-bottom: 1px solid #ba8658; }
+  .header-bottom__inner {
+    display: flex;
+    align-items: center;
+    height: 53px; }
+  .header-bottom__right {
+    display: flex;
+    align-items: center; }
+  .header-bottom__link {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative; }
+    .header-bottom__link > img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.18;
+      transform: translate(-50%, -25%); }
+    .header-bottom__link:hover {
+      color: #9a9999; }
+    .header-bottom__link:not(:last-child) {
+      margin-right: 65px; }
+
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    margin-right: 15px; }
+  .header__theme-toggler {
+    margin-right: 40px; }
+
+  .header-center__link:not(:last-child),
+  .header-bottom__link:not(:last-child) {
+    margin-right: 35px; } }
+@media screen and (max-width: 992px) {
+  .header {
+    position: relative; }
+    .header__burger {
+      display: flex;
+      width: 21px;
+      height: 14px;
+      position: relative;
+      flex-shrink: 0;
+      margin-left: auto; }
+      .header__burger:after, .header__burger:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        left: 0;
+        transition: all .3s; }
+      .header__burger:before {
+        top: 0; }
+      .header__burger:after {
+        bottom: 0; }
+      .header__burger span {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        display: block;
+        transition: all .3s; }
+    .header__burger--active:before {
+      transform: rotate(45deg);
+      top: 6px;
+      background-color: #ba8658; }
+    .header__burger--active:after {
+      transform: rotate(-45deg);
+      bottom: 6px;
+      background-color: #ba8658; }
+    .header__burger--active span {
+      transform: scale(0.000001); }
+    .header__mob-nav {
+      position: absolute;
+      width: 100%;
+      background-color: #ba8658;
+      padding: 20px 0;
+      display: none;
+      z-index: 10; }
+    .header__search::after {
+      display: none; }
+
+  .header-top__hint {
+    display: none; }
+
+  .header-center__inner,
+  .header-bottom__inner {
+    height: unset;
+    flex-wrap: wrap;
+    padding: 0 5px; }
+  .header-center__left,
+  .header-bottom__left {
+    width: 100%; }
+  .header-center__right,
+  .header-bottom__right {
+    order: -1;
+    width: 100%;
+    margin-bottom: 10px; }
+  .header-center__link,
+  .header-bottom__link {
+    display: block;
+    line-height: 200%;
+    width: 100%; }
+    .header-center__link:not(:last-child),
+    .header-bottom__link:not(:last-child) {
+      margin-right: 0; }
+    .header-center__link img,
+    .header-bottom__link img {
+      display: none; } }
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 160px; }
+  .header__theme-toggler {
+    margin-right: 0px;
+    position: absolute;
+    right: 10px;
+    top: 22px; }
+    .header__theme-toggler-dark, .header__theme-toggler-light {
+      width: 40px;
+      height: 30px; }
+      .header__theme-toggler-dark img, .header__theme-toggler-light img {
+        width: 17px; }
+  .header__search input {
+    width: 200px; }
+  .header__search-btn {
+    margin-left: 10px; }
+    .header__search-btn img {
+      width: 20px; }
+
+  .header-top__inner {
+    flex-wrap: wrap; }
+  .header-top__left {
+    width: 100%;
+    margin-bottom: 20px; }
+  .header-top__right {
+    width: 100%; }
+  .header-top__links {
+    font-size: 15px; }
+    .header-top__links-separate {
+      margin: 0 5px; } }
+@keyframes search {
+  from {
+    width: 100%; }
+  to {
+    width: 0px; } }
+@-webkit-keyframes search {
+  from {
+    width: 100%; }
+  to {
+    width: 0px; } }
+
+/*# sourceMappingURL=header.css.map */
