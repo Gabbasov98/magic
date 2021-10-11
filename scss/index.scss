@@ -534,18 +534,6 @@
 .feedback {
     padding: 90px 0;
     position: relative;
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     z-index: 2;
-    //     background-image: url(../images/sky2.png);
-    //     background-size: 100% 100%;
-    //     width: 471px;
-    //     height: 337px;
-    //     opacity: 0.23;
-    //     right: 0;
-    //     bottom: 0;
-    // }
     &__inner {
         position: relative;
         z-index: 2;
@@ -557,6 +545,7 @@
         transform: translate(-50%, 0%);
         opacity: 0.2;
         width: 100%;
+        pointer-events: none;
     }
     &__subtitle {
         text-align: center;
@@ -584,6 +573,44 @@
     &__btn {
         width: 231px;
         margin: 71px auto 0;
+        &-more {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ba8658;
+            width: 200px;
+            margin: 75px auto 0;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        position: relative;
+        flex-wrap: wrap;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 98px;
+            height: 62px;
+            opacity: 0.1;
+            background-size: 100% 100%;
+        }
+        &:before {
+            background-image: url(../images/quote_left.png);
+            top: -30px;
+            left: 0;
+            transform: translateY(-100%);
+        }
+        &::after {
+            background-image: url(../images/quote_right.png);
+            right: 0;
+            bottom: 30px;
+            transform: translateY(100%);
+        }
     }
     &__item {
         padding: 0 30px;
@@ -596,6 +623,16 @@
             font-size: 15px;
             line-height: 25px;
             margin-top: 5px;
+        }
+        &-rating {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 5px;
+                }
+            }
         }
     }
 }
@@ -923,6 +960,13 @@
     }
     .feedback {
         padding: 30px 0;
+        &__items {
+            margin-top: 40px;
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
         &__item {
             padding: 0 10px;
         }
@@ -941,6 +985,9 @@
         }
         &__btn {
             margin-top: 20px;
+            &-more {
+                margin-top: 20px;
+            }
         }
     }
     .info {
@@ -1061,12 +1108,18 @@
         }
     }
     .feedback {
+        &__items {
+            margin-top: 20px;
+        }
         &__item {
             padding: 0;
             &-desc,
             &-name {
                 font-size: 12px;
                 line-height: 130%;
+            }
+            &-rating {
+                margin-bottom: 10px;
             }
         }
         &__title {

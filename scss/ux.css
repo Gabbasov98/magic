@@ -180,6 +180,83 @@
     border-radius: 22px;
     transition: all .3s; }
 
+.card3 {
+  background-color: #252525;
+  padding: 8px;
+  transition: all .3s; }
+  .card3:hover {
+    background-color: #ba8658;
+    color: #000000; }
+    .card3:hover .card3__inner {
+      border-color: #000; }
+    .card3:hover .card3__link {
+      background-color: #252525;
+      color: #ba8658; }
+    .card3:hover .card3__desc {
+      font-weight: 500; }
+    .card3:hover .card3__title {
+      color: #000; }
+      .card3:hover .card3__title:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: #000; }
+    .card3:hover .card3__price {
+      color: #ba8658;
+      background-color: #fff; }
+  .card3__inner {
+    border: 1px solid #ba8658;
+    padding: 30px;
+    position: relative; }
+  .card3__top {
+    width: 190px;
+    height: 190px;
+    margin: -125px auto 0; }
+    .card3__top img {
+      width: 100%; }
+  .card3__price {
+    transition: all .3s;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: #ba8658;
+    border-radius: 50%;
+    top: 0px;
+    left: 50%;
+    transform: translate(60%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 14px; }
+    .card3__price strong {
+      font-size: 21px;
+      font-weight: 500; }
+    .card3__price span {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 300; }
+  .card3__title {
+    transition: all .3s;
+    font-size: 17px;
+    line-height: 170%;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #bf8b5c;
+    position: relative;
+    color: #ba8658; }
+  .card3__desc {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 15px; }
+  .card3__link {
+    width: 202px;
+    height: 44px;
+    margin: 35px auto 0;
+    border-radius: 22px;
+    transition: all .3s; }
+
 .breadcrumbs {
   margin-top: 33px; }
   .breadcrumbs__inner {
@@ -268,7 +345,56 @@
   .btn-yellow,
   .btn-outline-yellow {
     height: 45px;
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  .breadcrumbs__item {
+    font-size: 12px; }
+    .breadcrumbs__item:not(:last-child) {
+      margin-right: 12px; }
+      .breadcrumbs__item:not(:last-child):before {
+        width: 4px;
+        height: 4px;
+        right: -9px;
+        top: 10px; }
+
+  .card2__inner {
+    padding: 30px; }
+  .card2__price {
+    width: 65px;
+    height: 65px;
+    padding: 17px 0 10px; }
+    .card2__price strong {
+      font-size: 19px; }
+    .card2__price span {
+      font-size: 15px; }
+  .card2__title {
+    font-size: 15px;
+    line-height: 130%; }
+  .card2__desc {
+    font-size: 13px;
+    line-height: 150%; }
+
+  .card3__inner {
+    padding: 20px; }
+  .card3__top {
+    width: 160px;
+    height: 160px;
+    margin-top: -100px; }
+  .card3__price {
+    width: 65px;
+    height: 65px;
+    padding: 17px 0 10px; }
+    .card3__price strong {
+      font-size: 19px; }
+    .card3__price span {
+      font-size: 15px; }
+  .card3__title {
+    font-size: 15px;
+    line-height: 130%; }
+  .card3__desc {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 150%; } }
 @media screen and (max-width: 500px) {
   .card__info {
     justify-content: center; }

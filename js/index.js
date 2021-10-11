@@ -30,12 +30,12 @@ function sliderBest() {
 }
 
 function sliderServiceIndex() {
-    var swiper = new Swiper('.service-index .swiper-container', {
+    var swiper = new Swiper('.service-index--page .swiper-container', {
         slidesPerView: 4,
         spaceBetween: 10,
         navigation: {
-            nextEl: '.service-index .swiper-button-next',
-            prevEl: '.service-index .swiper-button-prev',
+            nextEl: '.service-index--page .swiper-button-next',
+            prevEl: '.service-index--page .swiper-button-prev',
         },
         breakpoints: {
             320: {
@@ -84,11 +84,94 @@ function sliderFeedback() {
     })
 }
 
+function sliderArticle() {
+    var swiper = new Swiper('.article .swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.article .swiper-button-next',
+            prevEl: '.article .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+
+            992: {
+                slidesPerView: 2,
+
+            },
+            1200: {
+                spaceBetween: 70
+            },
+        }
+    })
+}
+
+function sliderWebinar() {
+    var swiper = new Swiper('.webinar .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.webinar .swiper-button-next',
+            prevEl: '.webinar .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 3,
+
+            },
+            1200: {
+                spaceBetween: 70
+            },
+        }
+    })
+}
+
+function sliderServiceIndexExpert() {
+    var swiper = new Swiper('.service-index--expert .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 60,
+        navigation: {
+            nextEl: '.service-index--expert .swiper-button-next',
+            prevEl: '.service-index--expert .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 60
+            },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            992: {
+                slidesPerView: 3,
+
+            },
+            1200: {
+                spaceBetween: 68,
+                slidesPerView: 4,
+            },
+        }
+    })
+}
 
 $(document).ready(function() {
+    sliderArticle()
     sliderBest()
     sliderServiceIndex()
     sliderFeedback()
+    sliderWebinar()
+    sliderServiceIndexExpert()
 
     $(".header__theme-toggler-light").click(function() {
         $(".header__theme-toggler").removeClass("header__theme-toggler--dark")
