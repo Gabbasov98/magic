@@ -283,6 +283,7 @@ i {
 @import 'services';
 @import 'lk';
 @import 'expert-paid';
+@import 'expert-ordinar';
 @import 'footer';
 @import 'popups';
 .wrapper {
@@ -333,7 +334,10 @@ h2 {
 
 @media screen and (max-width: 992px) {
     body {
-        background-image: none;
+        background-image: url(../images/sky.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top 0;
     }
 }
 

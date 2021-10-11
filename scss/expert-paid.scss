@@ -140,7 +140,7 @@
         left: 0;
         width: 100%;
         left: 50%;
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -85%);
         z-index: 2;
     }
     &__bg2 {
@@ -221,7 +221,7 @@
     background-position: right 170px top 110px;
     background-repeat: no-repeat;
     .feedback__item {
-        padding: 0;
+        // padding: 0;
         width: calc(50% - 35px);
     }
     .feedback__btn {
@@ -496,14 +496,23 @@
 }
 
 @media screen and (max-width: 992px) {
-    .body--expert,
+    // .body--expert,
     .feedback--expert {
-        background-image: none;
+        // background-image: none;
+    }
+    .body--expert {
+        background-image: url(../images/sky.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top 0;
     }
     .expert {
         padding-top: 30px;
         &__bg {
-            display: none;
+            width: 50%;
+            & img {
+                width: 100%;
+            }
         }
         &__title {
             font-size: 40px;
@@ -536,9 +545,6 @@
     }
     .rating {
         padding-bottom: 30px;
-        &__bg2 {
-            display: none;
-        }
         &__inner {
             flex-wrap: wrap;
             margin-top: -190px;
@@ -576,7 +582,10 @@
         background-image: none;
         padding: 30px 0 60px;
         &__bg {
-            display: none;
+            width: 50%;
+            & img {
+                width: 100%;
+            }
         }
     }
     .article {
@@ -611,8 +620,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    .expert-rating {
+        position: relative;
+        padding-bottom: 200px;
+    }
     .expert {
         padding-bottom: 0;
+        position: static;
         &__img {
             position: relative;
             bottom: unset;
@@ -624,10 +638,13 @@
         }
         &__inner {
             padding-bottom: 0;
+            position: static;
         }
         &__buttons {
             width: 100%;
             margin-top: 0;
+            position: absolute;
+            bottom: 30px;
         }
         &__title {
             font-size: 25px;
@@ -647,7 +664,11 @@
             }
         }
         &__btn {
-            margin: 15px auto 0 !important;
+            margin: 15px 0 0 !important;
+            width: calc(100% - 20px);
+            & img {
+                width: 20px;
+            }
         }
         &__play {
             bottom: 100px;

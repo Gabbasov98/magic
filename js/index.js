@@ -197,7 +197,6 @@ $(document).ready(function() {
         $(this).addClass("experts__tab--active");
         $(".experts__content").removeClass("experts__content--active");
         $(`.experts__content[data-content-path="${path}"]`).addClass("experts__content--active");
-        console.log(path)
     })
 
     $(".quiz__nav-next").click(function() {
@@ -225,6 +224,16 @@ $(document).ready(function() {
         $(`.quiz__step[data-step-path="${path}"]`).addClass("quiz__step--active");
         console.log(path)
     })
+
+    $(".expert-info__tab").click(function() {
+        let path = $(this).attr("data-tab-path");
+        $(".expert-info__tab").removeClass("expert-info__tab--active");
+        $(this).addClass("expert-info__tab--active");
+        $(".expert-info__content").removeClass("expert-info__content--active");
+        $(`.expert-info__content[data-content-path="${path}"]`).addClass("expert-info__content--active");
+    })
+
+    // expert-info__tab
 
     $(".services__filter-item").click(function() {
         $(this).toggleClass("services__filter-item--active")

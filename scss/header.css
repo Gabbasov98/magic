@@ -186,6 +186,8 @@
 
   .header-top__hint {
     display: none; }
+  .header-top__links {
+    margin-right: 20px; }
 
   .header-center__inner,
   .header-bottom__inner {
