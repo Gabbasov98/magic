@@ -233,7 +233,6 @@ $(document).ready(function() {
         $(`.expert-info__content[data-content-path="${path}"]`).addClass("expert-info__content--active");
     })
 
-    // expert-info__tab
 
     $(".services__filter-item").click(function() {
         $(this).toggleClass("services__filter-item--active")
@@ -241,5 +240,14 @@ $(document).ready(function() {
 
     $(".lk__pay-item-show").click(function() {
         $(this).toggleClass("lk__pay-item-show--active")
+    })
+
+    $(".services__filter-btn--col").click(function() {
+        console.log(true)
+        $(".experts__content").addClass("experts__content--column")
+    })
+    $(".services__filter-btn--row").click(function() {
+        console.log(true)
+        $(".experts__content").removeClass("experts__content--column")
     })
 })

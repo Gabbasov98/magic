@@ -327,12 +327,71 @@
         margin-top: 70px;
     }
     .experts__content--active {
-        display: block;
+        grid-template-columns: 1fr;
+    }
+    .experts__content--column {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 50px;
+        .experts-all__item {
+            &:before {
+                opacity: 0.9;
+            }
+            &:hover {
+                .experts-all__item-btn {
+                    background-color: #252525;
+                    color: #ba8658;
+                }
+            }
+            &-inner {
+                padding: 95px 30px 30px;
+                position: relative;
+            }
+            &-right {
+                display: none;
+            }
+            &-left {
+                display: block;
+                width: 100%;
+                padding-right: 0;
+            }
+            &-img {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 0;
+                left: 50%;
+                width: 150px;
+                height: 150px;
+            }
+            &-name {
+                text-align: center;
+                &:before {
+                    transform: translate(-50%, 0%);
+                    left: 50%;
+                }
+            }
+            &-profession {
+                text-align: center;
+                line-height: 140%;
+            }
+            &-info {
+                &-item {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            &-btn {
+                width: 150px;
+                height: 44px;
+                margin: 28px auto 0;
+                border-radius: 22px;
+                display: flex;
+            }
+        }
     }
     &__item {
         position: relative;
         &:not(:last-child) {
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
         }
         &:hover {
             .experts-all__item-img {
@@ -361,6 +420,9 @@
             display: flex;
             justify-content: space-between;
             padding: 35px;
+        }
+        &-btn {
+            display: none;
         }
         &-left {
             width: 47%;
@@ -520,6 +582,18 @@
         }
     }
     .experts-all {
+        .experts__content--column {
+            gap: 100px 10px;
+            .experts-all__item {
+                &-info {
+                    display: flex;
+                    justify-content: space-between;
+                    &-item {
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
         &__item {
             &-profession {
                 line-height: 130%;
@@ -608,6 +682,14 @@
         }
         .experts__contents {
             margin-top: 40px;
+        }
+        .experts__content--column {
+            grid-template-columns: 1fr 1fr 1fr;
+            .experts-all__item {
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                }
+            }
         }
         &__item {
             &:not(:last-child) {
@@ -737,6 +819,10 @@
         }
     }
     .experts-all {
+        .experts__content--column {
+            grid-template-columns: 1fr 1fr;
+            gap: 90px 20px;
+        }
         &__item {
             &-left {
                 display: block;
@@ -772,6 +858,15 @@
                 font-size: 11px;
                 line-height: 140%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experts-all {
+        .experts__content--column {
+            grid-template-columns: 1fr;
+            gap: 90px 20px;
         }
     }
 }
